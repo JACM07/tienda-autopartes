@@ -80,3 +80,7 @@ body::before {
     margin-top: 25px;
 }
 
+input{
+    caret-color: black;
+}
+

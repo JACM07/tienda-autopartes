@@ -20,15 +20,12 @@
     padding: 30px 40px 10px 40px;
     border-radius: 10px;
 }
+
 .formulario-empleado{
     background-color: #013faa44;/*color secundario, 0.5 para la opacidad*/
     margin: 10px 80px 10px 80px;
     padding: 30px 40px 10px 40px;
     border-radius: 10px;
-}
-
-.formulario input{
-    caret-color: black;
 }
 
 label, input,button{
