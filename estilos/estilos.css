@@ -13,8 +13,8 @@ body{
     padding: 0;
     height: 100vh;
     position: relative;
-    --color-principal: #514BFA;/*color principal*/
-    --color-secundario: #e5bf03;/*color secundario*/
+    --color-principal: #0140AA;/*color principal*/
+    --color-secundario:#FED403;/*color secundario*/
 }
 
 body::before {
@@ -34,7 +34,7 @@ body::before {
 }
 .icono-llanta{
     height: 97px;
-    background-color: #E5BF03;
+    background-color:#FED403;;
 }
 
 .barra-navegacion{
