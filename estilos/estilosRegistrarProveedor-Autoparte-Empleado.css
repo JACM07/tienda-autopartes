@@ -19,6 +19,9 @@
     padding: 30px 40px 10px 40px;
     border-radius: 10px;
 }
+.naranja{
+    background-color: rgba(243,156,18,0.5);
+}
 
 .formulario-empleado{
     background-color: #013faa44;
