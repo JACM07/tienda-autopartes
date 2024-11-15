@@ -40,14 +40,14 @@
                 <label for="cantidad-autoparte-vender" class="form-label">Selecciona la cantidad:</label>
                 <select  id="cantidad-autoparte-vender" name="cantidad-autoparte-vender" class="form-select">
                     <!--Opciones se llenarán desde el servidor-->
-                    <option selected>Elige...</option>
-                    <option value="1">1</option><!--Prueba de visualizacion-->
-                    <option value="2">2</option>
+                    <option value="1" selected>1</option>
+                    <option value="2">1</option><!--Prueba de visualizacion-->
+                    <option value="3">3</option>
                 </select>
 
                 <div class="total-contenedor">
                     <label for="total" class="form-label">Total:</label>
-                    <span>$</span><span id="total" class="form-total">0.00</span> <!-- Valor inicial -->
+                    <span>$</span><span id="total" class="form-total">0.00</span> <!--Valor inicial-->
                 </div>
 
                 <label for="cantidad-autoparte-vender" class="form-label">Selecciona el método de pago:</label>
@@ -70,22 +70,31 @@
                 </div>
 
                 <h2>Información del cliente:</h2>
-
-
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="button" class="btn btn-success me-md-2" onclick="procesarCompra()">Comprar</button><!--Agregar onclick, para guardar la información en la base de datos-->
-                    <button type="reset" class="btn btn-danger">Borrar todo</button><br/><!--Reiniciar formulario-->
+                <!--ID-cliente se generará automáticamente-->
+                <div class="mb-3">
+                    <label for="nombre-cliente" class="form-label">Nombre del cliente:</label>
+                    <input type="text" class="form-control" id="nombre-cliente" name="nombre-cliente" maxlength="50" placeholder="Introduce solo el nombre, sin apellidos" required>
                 </div>
 
+                <div class="mb-3">
+                    <label for="apellidos-cliente" class="form-label">Apellidos del cliente:</label>
+                    <input type="text" class="form-control" id="apellidos-cliente" name="apellidos-cliente" maxlength="100" placeholder="Introduce solo los apellidos" required>
+                </div>
 
-
+                <div class="col-md-6">
+                    <label for="telefono-cliente" class="form-label">Teléfono del cliente:</label>
+                    <input type="tel" class="form-control" id="telefono-cliente" name="telefono-cliente" pattern="[0-9]{10}" placeholder="1234567890" required/>
+                </div>
+                
+            
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-success me-md-2" onclick="procesarCompra()">Realizar venta</button><!--Agregar onclick, para guardar la información en la base de datos-->
+                    <button type="reset" class="btn btn-danger">Borrar todo</button><br/><!--Reiniciar formulario-->
+                </div>
                 <!--confirmación de venta-->
                 <!--Actualización del inventario después de la venta-->
             </form>
         </div>
-        
-
-
     </main>
 </body>
 </html>
