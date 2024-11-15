@@ -26,6 +26,9 @@
 
         <div id="formulario-vender">
             <form method="post" autocomplete="off" class="row g-3">
+                <!--id venta se genera automáticamente-->
+                <!--fecha-venta se genera automáticamente-->
+
                 <label for="autoparte-vender" class="form-label">Selecciona la autoparte:</label>
                 <select  id="autoparte-vender" name="autoparte-vender" class="form-select">
                     <!--Opciones se llenarán desde el servidor-->
@@ -39,11 +42,45 @@
                     <!--Opciones se llenarán desde el servidor-->
                     <option selected>Elige...</option>
                     <option value="1">1</option><!--Prueba de visualizacion-->
-                        <option value="2">2</option>
+                    <option value="2">2</option>
                 </select>
-                
+
+                <div class="total-contenedor">
+                    <label for="total" class="form-label">Total:</label>
+                    <span>$</span><span id="total" class="form-total">0.00</span> <!-- Valor inicial -->
+                </div>
+
+                <label for="cantidad-autoparte-vender" class="form-label">Selecciona el método de pago:</label>
+                <select id="opciones-pago" name="opciones-pago" class="form-select">
+                    <option value="efectivo" selected>Efectivo</option>
+                    <option value="tarjeta-credito">Tarjeta de crédito</option>
+                    <option value="tarjeta-debito">Tarjeta de débito</option>
+                    <option value="transferencia-bancaria">Transferencia bancaria</option>
+                </select>
+
+                <!--RFC del empleado que relalizó la venta-->
+                <div class="col-md-4">
+                    <label for="rfc-empleados" class="form-label">RFC del empleado que realizó la venta:</label>
+                    <select  id="rfc-empleados" name="rfc-empleados" class="form-select">
+                        <!--Opciones se llenarán desde el servidor-->
+                        <option selected>Elige...</option>
+                        <option value="rfc1">RFC1AAAAAAAAAA</option><!--Prueba de visualizacion-->
+                        <option value="rfc2">RFC2</option>
+                    </select>
+                </div>
+
+                <h2>Información del cliente:</h2>
 
 
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-success me-md-2" onclick="procesarCompra()">Comprar</button><!--Agregar onclick, para guardar la información en la base de datos-->
+                    <button type="reset" class="btn btn-danger">Borrar todo</button><br/><!--Reiniciar formulario-->
+                </div>
+
+
+
+                <!--confirmación de venta-->
+                <!--Actualización del inventario después de la venta-->
             </form>
         </div>
         
