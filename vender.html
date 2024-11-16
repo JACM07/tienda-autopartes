@@ -79,7 +79,7 @@
                     </select>
                 </div>
 
-                <h2>Información del cliente:</h2>
+                <h2 class="titulo2">Información del cliente:</h2>
                 <!--ID-cliente se generará automáticamente-->
                 <div class="col-md-6">
                     <label for="nombre-cliente" class="form-label">Nombre del cliente:</label>
@@ -106,16 +106,5 @@
             </form>
         </div>
     </main>
-<script>
-    document.getElementById("apellidos-cliente").addEventListener("focus",cambiar);//onfocus=focus, onclick=click
-    document.getElementById("apellidos-cliente").addEventListener("blur",regresarColor)
-    function cambiar(evento){
-        let componente=evento.target;
-        componente.style.background="violet";
-    }
-    function regresarColor(evento){
-        evento.target.style.background="white";
-    }
-</script>
 </body>
 </html>
