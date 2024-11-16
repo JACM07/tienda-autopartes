@@ -29,28 +29,28 @@
             <form method="post" autocomplete="off" class="row g-3"><!--ESTILOS CON BOOTSRAP-->
                 <div class="col-md-6">
                     <label for="nombre-empleado" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre-empleado" name="nombre-empleado" maxlength="30" placeholder="Nombre " required/><br/>
+                    <input type="text" class="form-control" id="nombre-empleado" name="nombre-empleado" maxlength="50" placeholder="Nombre " required/><br/>
                 </div>
                 
                 <div class="col-md-6">
                     <label for="apellidos-empleado" class="form-label">Apellidos:</label>
-                    <input type="text" class="form-control" id="apellidos-empleado" name="apellidos-empleado" maxlength="80" placeholder="Apellidos " required/><br/>
+                    <input type="text" class="form-control" id="apellidos-empleado" name="apellidos-empleado" maxlength="100" placeholder="Apellidos " required/><br/>
                 </div>
 
                 
                 <div class="col-md-4">
-                    <label for="startDate" class="form-label">Fecha Nacimiento</label>
-                    <input type="date" id="startDate" class="form-control">
+                    <label for="fecha-nacimiento" class="form-label">Fecha Nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="form-control">
                 </div>
             
                 <div class="col-md-4">
                     <label for="NSS" class="form-label">NSS:</label>
-                    <input type="text" class="form-control" id="NSS" name="NSS" maxlength="13" required placeholder="AAA000101A0A"/><br/>
+                    <input type="text" class="form-control" id="NSS" name="NSS" maxlength="13" required placeholder="18209512345"/><br/>
                 </div>
     
                 <div class="col-md-4">
                     <label for="rfc-empleado" class="form-label">RFC:</label><!--Funciona como el ID de la tabla-->
-                    <input type="text" class="form-control" id="rfc" name="rfc" maxlength="13" required placeholder="AAA000101A0A"/><br/>
+                    <input type="text" class="form-control" id="rfc-empleado" name="rfc-empleado" maxlength="13" required placeholder="AAA000101A0A"/><br/>
                 </div>
     
                 <div class="col-md-4">
@@ -79,15 +79,13 @@
                 </div>
                 
                 <div class="col-md-3">
-                    <label for="startDate" class="form-label">Fecha de Inicio trabajo</label>
-                    <input type="date" id="startDate" class="form-control">
+                    <label for="fecha-contratacion" class="form-label">Fecha de Contratación</label>
+                    <input type="date" id="fecha-contratacion" name="fecha-contratacion" class="form-control">
                 </div>
                 <div class="d-grid gap-2 col-md-3 mx-auto">
                     <button type="button" class="btn btn-success">Guardar</button><!--Agregar onclick, para guardar la información en la base de datos-->
                     <button type="reset" class="btn btn-secondary">Restablecer</button><!--Reiniciar formulario-->
                     <button type="button" class="btn btn-primary" onclick="window.location.href='empleados-tabla.html'">Mostrar Empleados</button><br/>
-
- 
                 </div>
             </form>
         </div>
