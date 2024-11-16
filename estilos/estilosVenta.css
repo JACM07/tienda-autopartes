@@ -13,3 +13,123 @@
     padding: 30px 40px 10px 40px;
     border-radius: 10px;
 }
+
+/*CHECAR ESTILOS*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #212529; /* Texto oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.formulario-vender {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Títulos */
+.titulo {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #495057; /* Gris oscuro */
+}
+
+/* Estilos de los campos */
+.form-label {
+    font-weight: 600;
+    color: #495057; /* Gris oscuro */
+}
+
+.form-control, 
+.form-select {
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    box-shadow: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Resaltado al enfocar */
+.form-control:focus, 
+.form-select:focus {
+    border-color: #007bff; /* Azul al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botones */
+button.btn-success {
+    background-color: #28a745; /* Verde */
+    border-color: #28a745;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.btn-success:hover {
+    background-color: #218838; /* Verde oscuro */
+    transform: scale(1.02); /* Animación al pasar el mouse */
+}
+
+button.btn-danger {
+    background-color: #dc3545; /* Rojo */
+    border-color: #dc3545;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333; /* Rojo oscuro */
+    transform: scale(1.02); /* Animación al pasar el mouse */
+}
+
+/* Total */
+.total-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f1f3f5; /* Fondo gris claro */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #212529; /* Texto oscuro */
+}
+
+.input-group-text span {
+    font-weight: 700;
+    color: #495057; /* Gris oscuro */
+}
+
+/* Margen entre elementos */
+.row .col-md-4, 
+.row .col-md-6 {
+    margin-bottom: 20px;
+}
+
+/* Resaltar secciones */
+h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #007bff; /* Azul */
+    text-decoration: underline;
+}
+
+/* Mejoras en el diseño del selector */
+.form-select {
+    padding: 10px;
+}
+
+/* Mobile-friendly */
+@media (max-width: 576px) {
+    .formulario-vender {
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+}

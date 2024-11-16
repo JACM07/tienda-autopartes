@@ -27,20 +27,17 @@
 
         <div class="formulario-empleado">
             <form method="post" autocomplete="off" class="row g-3"><!--ESTILOS CON BOOTSRAP-->
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <label for="nombre-empleado" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="nombre-empleado" name="nombre-empleado" maxlength="30" placeholder="Nombre " required/><br/>
                 </div>
                 
-                <div class="col-md-4">
-                    <label for="apellido-empleado" class="form-label">Apellido Paterno:</label>
-                    <input type="text" class="form-control" id="apellido-empleado" name="apellido-empleado" maxlength="30" placeholder="Apellido " required/><br/>
+                <div class="col-md-6">
+                    <label for="apellidos-empleado" class="form-label">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos-empleado" name="apellidos-empleado" maxlength="80" placeholder="Apellidos " required/><br/>
                 </div>
 
-                <div class="col-md-4">
-                    <label for="apellido-empleado" class="form-label">Apellido Materno:</label>
-                    <input type="text" class="form-control" id="apellido-empleado" name="apellido-empleado" maxlength="30" placeholder="Apellido " required/><br/>
-                </div>
+                
                 <div class="col-md-4">
                     <label for="startDate" class="form-label">Fecha Nacimiento</label>
                     <input type="date" id="startDate" class="form-control">
@@ -65,19 +62,7 @@
                     <label for="telefono-empleado" class="form-label">Teléfono:</label>
                     <input type="tel" class="form-control" id="telefono-empleado" name="telefono-empleado" pattern="[0-9]{10}" placeholder="1234567890" required/><br/>
                 </div>
-                <div class="col-5">
-                    <label for="direccion-empleado" class="form-label">Dirección:</label>
-                    <input type="text" class="form-control" id="direccion-empleado" name="direccion-empleado" maxlength="50" placeholder="Calle " required/><br/>
-                </div>
-
-                <div class="col-2">
-                    <label for="direccion-numero" class="form-label">Numero:</label>
-                    <input type="text" class="form-control" id="direccion-numero" name="direccion-numero" maxlength="50" placeholder="#123" required/><br/>
-                </div>
-                <div class="col-5">
-                    <label for="colonia-empleado" class="form-label">Colonia:</label>
-                    <input type="text" class="form-control" id="colonia-empleado" name="colonia-empleado" maxlength="50" placeholder="Jadines del bosque" required/><br/>
-                </div>  
+                 
                 <div class="col-md-4">
                     <label for="puesto-empleado" class="form-label">Puesto de trabajo:</label>
                     <select class="form-control" id="puesto-empleado" name="puesto-empleado" required>

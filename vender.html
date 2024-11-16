@@ -106,5 +106,16 @@
             </form>
         </div>
     </main>
+<script>
+    document.getElementById("apellidos-cliente").addEventListener("focus",cambiar);//onfocus=focus, onclick=click
+    document.getElementById("apellidos-cliente").addEventListener("blur",regresarColor)
+    function cambiar(evento){
+        let componente=evento.target;
+        componente.style.background="violet";
+    }
+    function regresarColor(evento){
+        evento.target.style.background="white";
+    }
+</script>
 </body>
 </html>
