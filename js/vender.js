@@ -1,7 +1,7 @@
 let contadorAutopartes = 1; //Para evitar ids duplicados
 
 let agregarOtraAutoparte = () => {
-    console.log("Se llamó a agregarOtraAutoparte");
+    console.log("Se llamó a agregarOtraAutoparte");//quitar después
 
     let contenido = `
         <div class="row" id="fila-autoparte-${contadorAutopartes}">
@@ -53,7 +53,7 @@ let mostrarFormularioAutoparte = () => {
     }
 };
 
-window.onload = () => {
+window.onload = () => {//se muestra cuando se carga la ventana
     mostrarFormularioAutoparte();
 };
 
