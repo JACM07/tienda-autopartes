@@ -30,35 +30,58 @@
                 <!--id venta se genera automáticamente-->
                 <!--fecha-venta se genera automáticamente-->
 
-                <div class="col-md-4">
-                    <label for="autoparte-vender" class="form-label">Selecciona la autoparte:</label>
-                    <select  id="autoparte-vender" name="autoparte-vender" class="form-select">
-                        <!--Opciones se llenarán desde el servidor-->
-                        <option selected>Elige...</option>
-                        <option value="aceite">llanta para carro</option><!--Prueba de visualizacion-->
-                            <option value="aceite">aceite motor V8</option>
-                    </select>
+                
+
+                
+                <div id="informacion-autoparte" class="row"><!--ESTO SE LIMPIA-->
+                    <div class="col-md-4">
+                        <label for="autoparte-vender" class="form-label">Selecciona la autoparte:</label>
+                        <select  id="autoparte-vender" name="autoparte-vender" class="form-select">
+                            <!--Opciones se llenarán desde el servidor-->
+                            <option selected>Elige...</option>
+                            <option value="aceite">llanta para carro</option><!--Prueba de visualizacion-->
+                                <option value="aceite">aceite motor V8</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-md-2">
+                        <label for="cantidad-autoparte-vender" class="form-label">Selecciona la cantidad:</label>
+                        <select  id="cantidad-autoparte-vender" name="cantidad-autoparte-vender" class="form-select">
+                            <!--Opciones se llenarán desde el servidor-->
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option><!--Prueba de visualizacion-->
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-md-2"><!--NUEVO: para precio subtotal-->
+                        <label for="subtotal" class="form-label">Subtotal:</label>
+                        <div class="input-group-text">
+                            <span>$</span><span id="subtotal" class="form-total">0.00</span> <!--Valor inicial-->
+                        </div>
+                    </div> 
                 </div>
 
-                <div class="col-md-4">
-                    <label for="cantidad-autoparte-vender" class="form-label">Selecciona la cantidad:</label>
-                    <select  id="cantidad-autoparte-vender" name="cantidad-autoparte-vender" class="form-select">
-                        <!--Opciones se llenarán desde el servidor-->
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option><!--Prueba de visualizacion-->
-                        <option value="3">3</option>
-                    </select>
-                </div>
+                <!--<div class="col-md-3 text-center">
+                    <label for="id-autoparte">Agregar otra autoparte</label>
+                    <div>
+                        <button type="button" id="agregar-autoparte" class="boton-agregar" onclick="agregarOtraAutoparte()">
+                            <ion-icon name="add-circle"></ion-icon>
+                        </button>
+                    </div>
+                </div> -->
+
+                <!--AQUI TERMINA LA PLANTILLA--> 
 
                
                 <div class="col-md-4 total-contenedor">
-                    <label for="total" class="form-label">Total:</label>
+                    <label for="total" class="form-label">TOTAL:</label>
                     <div class="input-group-text">
                         <span>$</span><span id="total" class="form-total">0.00</span> <!--Valor inicial-->
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="cantidad-autoparte-vender" class="form-label">Selecciona el método de pago:</label>
                     <select id="opciones-pago" name="opciones-pago" class="form-select">
                         <option value="efectivo" selected>Efectivo</option>
@@ -69,7 +92,7 @@
                 </div>
                 
                 <!--RFC del empleado que relalizó la venta-->
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="rfc-empleados" class="form-label">RFC del empleado que realizó la venta:</label>
                     <select  id="rfc-empleados" name="rfc-empleados" class="form-select">
                         <!--Opciones se llenarán desde el servidor-->
@@ -106,5 +129,10 @@
             </form>
         </div>
     </main>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="/js/vender.js"></script>
 </body>
 </html>

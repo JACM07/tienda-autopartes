@@ -19,4 +19,15 @@
     border-radius: 10px;
 }
 
+.boton-agregar{
+   border: none;
+   background-color: rgba(202, 207, 210, 1);
+}
+
+ion-icon{
+    color: black;
+    width: 45px;
+    height: 50px;
+}
+
 
